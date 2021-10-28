@@ -39,7 +39,7 @@ public class DisariumTest {
         List<Integer> list = Arrays.asList(disariumBetween151And550);
 
         Disarium disarium = new Disarium();
-        List<Integer> listCalculated = disarium.calculateDisarium(0,150);
+        List<Integer> listCalculated = disarium.calculateDisarium(151,550);
 
         assertEquals(true, listCalculated.equals(list));
     }
