@@ -10,6 +10,20 @@ import static org.junit.Assert.assertEquals;
 public class DisariumTest {
 
     @Test
+    public void return_true_with_number_89(){
+        Disarium disarium = new Disarium();
+
+        assertEquals(true, disarium.isDisarium(89));
+    }
+
+    @Test
+    public void return_false_with_number_200(){
+        Disarium disarium = new Disarium();
+
+        assertEquals(false, disarium.isDisarium(200));
+    }
+
+    @Test
     public void test_Disarium_between_0_150(){
         Integer[] disariumBetween0And150 = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 89, 135};
         List<Integer> list = Arrays.asList(disariumBetween0And150);
