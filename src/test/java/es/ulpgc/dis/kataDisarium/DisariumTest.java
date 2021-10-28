@@ -43,4 +43,15 @@ public class DisariumTest {
 
         assertEquals(true, listCalculated.equals(list));
     }
+
+    @Test
+    public void test_Disarium_between_551_5000(){
+        Integer[] disariumBetween551And5000 = {598,1306,1676,2427};
+        List<Integer> list = Arrays.asList(disariumBetween551And5000);
+
+        Disarium disarium = new Disarium();
+        List<Integer> listCalculated = disarium.calculateDisarium(551,5000);
+
+        assertEquals(true, listCalculated.equals(list));
+    }
 }
