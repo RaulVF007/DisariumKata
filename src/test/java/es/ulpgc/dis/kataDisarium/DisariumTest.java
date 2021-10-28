@@ -10,16 +10,10 @@ import static org.junit.Assert.assertEquals;
 public class DisariumTest {
 
     @Test
-    public void return_true_with_number_89(){
+    public void return_true_and_false_with_numbers_89_and_200(){
         Disarium disarium = new Disarium();
 
         assertEquals(true, disarium.isDisarium(89));
-    }
-
-    @Test
-    public void return_false_with_number_200(){
-        Disarium disarium = new Disarium();
-
         assertEquals(false, disarium.isDisarium(200));
     }
 

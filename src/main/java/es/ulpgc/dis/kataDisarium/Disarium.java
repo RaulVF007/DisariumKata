@@ -7,8 +7,7 @@ import java.util.List;
 public class Disarium {
 
     public boolean isDisarium(int number) {
-        int sum = 0;
-        int posStringNumber = 0;
+        int sum = 0, posStringNumber = 0;
         String stringNumber = String.valueOf(number);
 
         while(posStringNumber < stringNumber.length()){
